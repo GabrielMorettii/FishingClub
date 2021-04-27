@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  
+}
+
+.main{
+  background: url('https://images.unsplash.com/photo-1532015917327-c7c46aa1d930?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=736&q=80') center/cover;
+  height: 800px;
+  border-radius: 200px 0 0 0;
+}
+
+/* Header */
+
+.main .header{
+  height: 8%;
+}
+
+.header img{
+  position: relative;
+  left: 20%;
+  top: 10%;
+  width: 9%;
+}
+
+.main .header ul{
+  display: inline-block;
+  position: absolute;
+  right: 8%;
+  top: 5%;
+}
+
+.main .header li{
+  display: inline;
+  margin-right: 50px;
+}
+
+
+.main .header li a{
+  font-family: 'Arvo', serif;
+  text-decoration: none;
+  color: white;
+}
+
+.main .header li a:hover{
+  color: burlywood;
+}
+
+/* Content Main */
+
+.main .content .title{
+  font-family: 'Antonio', sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+.main .content{
+  color: #fff;
+  position: relative;
+  max-width: 30%;
+  top: 20%;
+  left: 20%;
+}
+
+.main .contentMain p{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+   text-align: justify;
+}
+
+.contentMain button{
+  padding: 3%;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 15px;
+  background:  green;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contentMain button:hover{
+  opacity: 0.9;
+  background-color: orange;
+}
+
+/* Services */
+
+.services{
+  height: 600px;
+}
+
+.titleService{
+  margin-top: 10%;
+}
+
+.titleService h2{
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline orange;
+}
+
+.titleService img{
+  width: 5%;
+  display: block;
+  margin: auto;
+}
+
+/* Cards */
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  gap: 15px;
+}
+
+.card img{
+  width: 100%;
+  height: 150px;
+}
+
+.card .titleDescription{
+  font-family: 'Antonio', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card .textDescription{
+  text-align: justify;
+}
+
+/* Team */
+
+.team{
+  background-color: #333;
+  padding: 5px;
+}
+
+.team .cards{
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 10%;
+}
+
+.team .cards .card{
+  background-color: #549401;
+  border-radius: 5px;
+}
+
+.team .card img{
+  height: 300px;
+}
+
+.team .card .titleDescription{
+  margin-top: 10px;
+  color: #fff;
+}
+
+.team .card .textDescription{
+  padding: 15px;
+}
+.team .card .textDescription ul{
+  text-align: center;
+}
+
+.team .card .textDescription li{
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.team .card .textDescription li img{
+  width: 25px;
+  height: 25px;
+}
+
+/* Testimony */
+
+.testimonials{
+  height: 800px;
+  display: grid;
+  grid-template-rows: 100px 650px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleTestimony{
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  text-decoration: underline orange;
+}
+
+.cardsTestimony{
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+
+}
+
+.cardTestimony{
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cardTestimony:hover{
+  box-shadow: 2px 2px 10px 2px grey;
+}
+
+.cardTestimony .avatar{
+  position: relative;
+}
+
+.cardTestimony .avatar img{
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+.cardTestimony .textTestimony{
+  font-family: 'PT Sans', sans-serif;
+  text-align: justify;
+}
+
+.authorTestimony{
+  font-family: 'Antonio', sans-serif;
+  font-size: 18px;
+}
+
+.cardTestimony .avatar img + img{
+  width: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.testimonials button{
+  padding: 15px;
+  width: 300px;
+  margin: auto;
+  background-color: #FE4D1B;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.testimonials button:hover{
+  background-color: orange;
+}
+/* Footer */
+
+.footer{
+  height: 80px;
+  background-color: black;
+  color: white;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer .logo{
+  text-align: center;
+}
+
+.footer .logo img{
+  width: 200px;
+  height: 40px;
+}
+
+.footer li{
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer .social img{
+  width: 25px;
+  height: 25px;
+} 
+
+.footer ul{
+  display: block;
+  text-align: center;
+}
+
+.footer p{
+  font-weight: bold;
+}
+
+/* Modal */
+
+.modal{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal .content{
+  background: rgb(100, 51, 153, 1);
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  color: white;
+  gap: 10px
+}
+
+.modal .content h1{
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal .content form{
+  width: 80%;
+  height: 60%;
+  max-width: 800px;
+  margin: 0 auto 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5)
+{
+  grid-column: span 2;
+}
+
+form input, form textarea{
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid rgba(138, 4, 53, 0.3);
+  outline: none;
+  font-size: 16px;
+}
+
+form label{
+  font-weight:600;
+  letter-spacing: 0.8px;
+
+}
+form a{
+  background-color: #ffffff22;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+  font-size: 14px;
+
+  transition: 400ms;
+}
+
+form a:hover{
+  background-color: white;
+  color: #ff5e84;
+
+  text-decoration: none;
+}
+form button{
+  background-color: white;
+  width: 150px;
+  height: 40px;
+
+  border-radius: 6px;
+  cursor: pointer;
+  
+  grid-column: 2;
+  justify-self: end;
+
+  transition: 400ms;
+
+}
+
+form button:hover{
+  background-color: #0984e3;
+  color: white;
+
+  text-decoration: none;
+}
+
+.modal.hide{
+  opacity: 0;
+  visibility: hidden;
+}
+
